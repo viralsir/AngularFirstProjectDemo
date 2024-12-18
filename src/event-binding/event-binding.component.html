@@ -1,0 +1,22 @@
+<p>event-binding works!</p>
+<form>
+  <table class="table table-borderless">
+     <tr>
+     <th> No1 :</th>
+       <td><input type="number" class="form-control" size="20" #no1></td>
+     </tr>
+    <tr>
+      <th>No2:</th>
+      <td>
+        <input type="number" class="form-control" size="20" #no2>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="text-center">
+        <input type="button" class="btn btn-primary" value="Max" (click)="Max(no1,no2)"   >
+        <input type="reset" class="btn btn-info" value="clear">
+      </td>
+    </tr>
+  </table>
+</form>
+<h1>{{displaymsg}}</h1>
