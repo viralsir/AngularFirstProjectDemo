@@ -6,6 +6,8 @@ import {StringintropullationComponent} from '../stringintropullation/stringintro
 import {PropertyBindingComponent} from '../property-binding/property-binding.component';
 import {EventBindingComponent} from '../event-binding/event-binding.component';
 import {StudentComponent} from './student/student.component';
+import {TwowaydatabindingComponent} from '../twowaydatabinding/twowaydatabinding.component';
+import {TDFComponent} from '../tdf/tdf.component';
 
 export const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -15,5 +17,7 @@ export const routes: Routes = [
   {path:"PropertyBinding",component:PropertyBindingComponent},
   {path:"EventBinding",component:EventBindingComponent},
   {path:"Student",component:StudentComponent},
+  {path:"Twoway",component:TwowaydatabindingComponent},
+  {path:"tdf",component:TDFComponent}
 
 ];

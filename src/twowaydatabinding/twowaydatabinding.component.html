@@ -1,0 +1,48 @@
+<div class="row" >
+  <div class="col-4">
+    <form>
+         <table class="table table-borderless">
+           <tr>
+             <th colspan="2"> Student Entry Form </th>
+           </tr>
+           <tr>
+             <td> Student Roll NO:</td>
+             <td><input type="number" name="rollno"  [(ngModel)]="rollno" > </td>
+           </tr>
+           <tr>
+             <td> Name :</td>
+             <td><input type="text" name="name" [(ngModel)]="name"> </td>
+           </tr>
+           <tr>
+             <td> Maths : </td>
+             <td><input type="number" name="maths" [(ngModel)]="maths"></td>
+           </tr>
+           <tr>
+             <td> Science :</td>
+             <td><input type="number" name="science" [(ngModel)]="science"> </td>
+           </tr>
+           <tr>
+             <td>
+               English :
+             </td>
+             <td><input type="number" name="english" [(ngModel)]="english"></td>
+           </tr>
+
+         </table>
+    </form>
+
+  </div>
+  <div class="col-8">
+     <h1> Student Information </h1>
+    <ul>
+      <li> Roll No : {{rollno}}</li>
+      <li> Name : {{name}}</li>
+      <li> Maths :{{maths}}</li>
+      <li>Science :{{science}}</li>
+      <li>English : {{english}}</li>
+      <li>Total : {{maths+science+english}}</li>
+      <li>Pass/Fail : {{(maths>=35 && science>=35 && english>=35)?"Pass":"Fail"}}</li>
+    </ul>
+  </div>
+
+</div>
