@@ -1,28 +1,28 @@
 <div class="row">
   <div class="col-4">
-    <form [formGroup]="formGroup" (ngSubmit)="add()"  >
+    <form >
       <table>
         <tr>
           <th>First Name :</th>
           <td>
-            <input type="text" size="20" class="form-control" formControlName="firstname">
+            <input type="text" size="20" name="firstname" class="form-control" [(ngModel)]="user.firstname" >
           </td>
         </tr>
         <tr>
           <th> Last Name :</th>
           <td>
-            <input type="text" size="20" class="form-control" formControlName="lastname">
+            <input type="text" size="20" name="lastname" class="form-control" [(ngModel)]="user.lastname">
           </td>
         </tr>
         <tr>
           <th> Email :</th>
           <td>
-            <input type="text" size="20" class="form-control" formControlName="email">
+            <input type="text" size="20" name="email" class="form-control" [(ngModel)]="user.email">
           </td>
         </tr>
         <tr>
           <td colspan="2">
-            <input type="submit" value="save" [disabled]="formGroup.invalid"  class="btn btn-outline-primary">
+            <input type="button" value="save"  (click)="add()"  class="btn btn-outline-primary">
             <input type="reset" value="clear" class="btn btn-outline-info">
           </td>
         </tr>

@@ -1,6 +1,7 @@
 import {Component, inject} from '@angular/core';
 import {FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
 import {UserService} from '../../service/user.service';
+import {User} from '../../Model/user';
 
 @Component({
   selector: 'app-entry',
@@ -17,17 +18,13 @@ export class EntryComponent
 {
 
    userservice:UserService=inject(UserService);
-
-  formGroup: FormGroup=new FormGroup({
-    "firstname":new FormControl("",[Validators.required,Validators.minLength(3)]),
-    "lastname":new FormControl(""),
-    "email":new FormControl("",[Validators.required,Validators.email]),
-
-  })
+   user:User=new User();
 
   add() {
-     this.userservice.add(this.formGroup.value);
-     this.formGroup.reset();
+
+    console.log(this.user);
+    this.userservice.add(this.user);
+
 
   }
 }
