@@ -1,0 +1,18 @@
+<div class="col-8" >
+
+  <table class="table table-bordered">
+    <tr>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Email</th>
+    </tr>
+    @for(user of userservice.view();track $index){
+      <tr>
+        <td>{{user.firstname}}</td>
+        <td>{{user.lastname}}</td>
+        <td>{{user.email}}</td>
+      </tr>
+    }
+  </table>
+
+</div>

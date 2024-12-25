@@ -8,6 +8,9 @@ import {EventBindingComponent} from '../event-binding/event-binding.component';
 import {StudentComponent} from './student/student.component';
 import {TwowaydatabindingComponent} from '../twowaydatabinding/twowaydatabinding.component';
 import {TDFComponent} from '../tdf/tdf.component';
+import {MdfComponent} from '../mdf/mdf.component';
+import {EntryComponent} from '../component/entry/entry.component';
+import {ViewComponent} from '../component/view/view.component';
 
 export const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -18,6 +21,9 @@ export const routes: Routes = [
   {path:"EventBinding",component:EventBindingComponent},
   {path:"Student",component:StudentComponent},
   {path:"Twoway",component:TwowaydatabindingComponent},
-  {path:"tdf",component:TDFComponent}
+  {path:"tdf",component:TDFComponent},
+  {path:"mdf",component:MdfComponent},
+  {path:"entry",component:EntryComponent},
+  {path:"view",component:ViewComponent}
 
 ];
