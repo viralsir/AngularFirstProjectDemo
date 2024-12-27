@@ -11,6 +11,7 @@ import {TDFComponent} from '../tdf/tdf.component';
 import {MdfComponent} from '../mdf/mdf.component';
 import {EntryComponent} from '../component/entry/entry.component';
 import {ViewComponent} from '../component/view/view.component';
+import {PostComponent} from '../APIDemo/post/post.component';
 
 export const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -24,6 +25,7 @@ export const routes: Routes = [
   {path:"tdf",component:TDFComponent},
   {path:"mdf",component:MdfComponent},
   {path:"entry",component:EntryComponent},
-  {path:"view",component:ViewComponent}
+  {path:"view",component:ViewComponent},
+  {path:"post",component:PostComponent}
 
 ];
